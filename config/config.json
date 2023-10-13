@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "Wahid@0646",
+    "database": "appointment",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "test": {
+      "username": "root",
+      "password": "Wahid@0646",
+      "database": "appointment",
+      "host": "localhost",
+      "dialect": "mysql"
+  },
+  "production": {
+      "username": "root",
+      "password": "Wahid@0646",
+      "database": "appointment",
+      "host": "localhost",
+      "dialect": "mysql"
+  }
+}

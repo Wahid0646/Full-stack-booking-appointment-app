@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Management</title>
+  <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+  <h1>User Management System</h1>
+
+  <form id="userForm">
+    <input type="text" id="name" placeholder="Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="number" id="phoneNumber" placeholder="Phone Number" required>
+    <input type="text" id="city" placeholder="City" required>
+    <input type="text" id="state" placeholder="State" required>
+    <input type="date" id="date" placeholder="Date & Time" required>
+    <input type="time" id="timing" placeholder="Timing" required>
+    <!-- Add other input fields as needed -->
+    <button type="submit">Add User</button>
+  </form>
+
+  <ul id="userList">
+    <% users.forEach(user => { %>
+      <li>
+        <%= user.name %> - <%= user.email %> - <%= user.phoneNumber %> - <%= user.city %> - <%= user.state %> - <%= user.date %> - <%= user.timing %><!-- Display other user properties -->
+        <button class="deleteBtn" data-id="<%= user.id %>">Delete</button>
+      </li>
+    <% }); %>
+  </ul>
+  <script src="../public/js/main.js"></script>
+</body>
+
+</html>
